@@ -1,0 +1,93 @@
+$sidebarBG: #3DADD1;
+$sidebarBOL: #308aa7;
+$sidebarTX: #EBF7FA;
+$sidebarHVBG: #369bbc;
+$sidebarBRBG: #E8488B;
+
+//sidebar
+.sidebar {
+  background-color: $sidebarBG;
+  color: $sidebarTX;
+  height: 100%;
+  width: 180px;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  a:link {
+    color: $sidebarTX;
+    text-decoration: none;
+  }
+  a:visited {
+    color: $sidebarTX;
+    text-decoration: none;
+  }
+
+  //sidebarLogo
+  .sidebarBrand {
+    height: 60px;
+    background-color: $sidebarBRBG;
+    border-bottom: 1px solid $sidebarBOL;
+
+    .sidebarBrandBlock {
+      padding: 10px;
+      display: block;
+    }
+
+    .sidebarBrandLogo {
+      width: 30px;
+      display: inline-block;
+    }
+
+    .sidebarBrandText {
+      color: $sidebarTX;
+      margin-left: 20px;
+      display: inline-block;
+    }
+  }
+
+  //sidebarLink
+  .sidebarLink {
+    background-color: $sidebarBG;
+    border-bottom: 1px solid $sidebarBOL;
+    a:hover {
+      background-color: $sidebarHVBG;
+      transition-property: background-color;
+      transition-duration: 500ms;
+    }
+
+    .sidebarLinkBlock {
+      padding: 10px;
+      display: block;
+    }
+
+    .sidebarLinkIcon {
+      width: 30px;
+      padding-left: 8px;
+      display: inline-block;
+    }
+
+    .sidebarLinkText {
+      margin-left: 30px;
+      display: inline-block;
+    }
+  }
+
+  .sidebarLink.footer {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid $sidebarBOL;
+  }
+
+  .sidebarLink.active {
+    background-color: $sidebarHVBG;
+  }
+
+  .sidebar.sibarCollapsead {
+    width: 60px;
+  }
+}

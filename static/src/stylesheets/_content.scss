@@ -1,0 +1,19 @@
+//content
+.content {
+  padding: 20px;
+  box-shadow:-5px 0 5px rgba(0,0,0,.25);
+  background-color: #E4E4E4;
+  position: absolute;
+  left: 180px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  color: #5a5a5a;
+  transition-property: left;
+  transition-duration: 300ms;
+  overflow: hidden;
+}
+.content.sibarCollapsead {
+  left: 60px;
+}
